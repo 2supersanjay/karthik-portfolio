@@ -3,25 +3,24 @@
 <link rel='stylesheet' href='./assets/style.css'></head><body>
 <h1>Aerospace Engineering Portfolio</h1>
 
+
 <!-- ===== Featured Project: PMD (Homepage) ===== -->
-<section class="section" id="pmd-feature">
+<section id="pmd-feature" style="margin: 24px 0;">
   <h2>Featured Project: Propellant Management Device (PMD)</h2>
 
-  <!-- Image path points to repo root -->
-  <figure>
-    <img src="./pmd_solidworks.png"
-         alt="SolidWorks reconstruction of a spherical cryogenic tank PMD with perforated vane and internal baffles"
-         style="max-width: 100%; border: 1px solid #1f2937; border-radius: 8px;">
+  <!-- Image (repo root) -->
+  <figure style="margin: 12px 0;">
+    <img src="./pmd_solidworks.png" alt="PMD CAD Model" style="max-width:100%; border:1px solid #1f2937; border-radius:8px;">
     <figcaption style="color:#9ca3af; margin-top:8px;">
       SolidWorks reconstruction of a spherical cryogenic propellant tank with an integrated PMD used for CFD replication.
     </figcaption>
   </figure>
 
-  <!-- Refined portfolio description -->
-  <div style="margin-top:16px; line-height:1.5;">
-    <h3>Propellant Management Device (PMD) — CAD Reconstruction & CFD Analysis</h3>
+  <!-- Refined PMD description -->
+  <div style="line-height:1.6; margin-top:16px;">
+    <h3>Propellant Management Device (PMD) — CAD Reconstruction &amp; CFD Analysis</h3>
     <p>
-      I designed and analyzed a <strong>Propellant Management Device (PMD)</strong> in SolidWorks, replicating a research study focused on cryogenic propellant handling in microgravity.
+      I designed and analyzed a <strong>Propellant Management Device (PMD)</strong> in SolidWorks based on a replicated research study focused on cryogenic propellant handling in microgravity.
       PMDs are critical spacecraft components that:
     </p>
     <ul>
@@ -41,28 +40,29 @@
       <strong>microgravity propellant system analysis</strong>, relevant to propulsion, cryogenic systems, and spacecraft fluid‑management design.
     </p>
 
-    <!-- Link to your case study page in repo root -->
+    <!-- Link to case study page (repo root) -->
     <p style="margin-top:12px;">
-      <a href="./pmd-study.html" style="color:#38bdf8;">View Full Case Study →</a>
+      <a href="./pmd-study.html">View Full Case Study →</a>
     </p>
-  
-<!-- ===== PMD Animation (Homepage) ===== -->
-<div id="pmd-animation" style="margin-top:16px;">
-  <h4>VOF CFD Animation</h3>
-  <video
-    controls
-    preload="metadata"
-    style="width:100%; max-width:900px; border:1px solid #1f2937; border-radius:8px;"
-    poster="./pmd_vof_animation.mp4"
-  >
-    ./pmd_vof_animation.mp4
-    Your browser does not support the video tag.
-  </video>
-  <p style="color:#9ca3af; margin-top:8px;">
-    Volume of Fluid (VOF) contour graph animation shows surface tension behavior along the vanes in micro-gravity.
-  </p>
-</div>
+  </div>
 
+  <!-- ===== VOF CFD Animation (Homepage) ===== -->
+  <div id="pmd-animation" style="margin-top:20px;">
+    <h3>VOF CFD Animation</h3>
+    <video
+      controls
+      preload="metadata"
+      style="width:100%; max-width:900px; border:1px solid #1f2937; border-radius:8px;"
+      poster="./pmd_solidworks.png"
+    >
+      <source src="./pmd_vof_animation.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="color:#9ca3af; margin-top:8px;">
+      Volume of Fluid (VOF) multiphase results showing free‑surface behavior and propellant acquisition dynamics.
+    </p>
+  </div>
 </section>
+
 
 </body></html>
