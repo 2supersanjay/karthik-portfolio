@@ -56,19 +56,19 @@
 
  
 
-<!-- ===== VOF CFD Animation + Table Side-by-Side ===== -->
+
+!-- ===== VOF CFD Animation + Table Side-by-Side (50/50) ===== -->
 <div id="pmd-animation" style="margin-top:20px;">
   <h3>VOF CFD Animation</h3>
 
-  <!-- Flex row container -->
+  <!-- Flex row container: two equal columns -->
   <div style="
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    flex-wrap: wrap;   /* allows stacking on narrow screens */
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
   ">
-    <!-- Left column: video + caption + download link -->
-    <div style="flex: 1 1 600px; min-width: 320px;">
+    <!-- Left: video column (50%) -->
+    <div style="flex:0 0 50%; max-width:50%;">
       <video
         controls
         preload="metadata"
@@ -90,8 +90,8 @@
       </p>
     </div>
 
-    <!-- Right column: table -->
-    <div style="flex: 0 1 420px; min-width: 280px;">
+    <!-- Right: table column (50%) -->
+    <div style="flex:0 0 50%; max-width:50%;">
       <h3>CFD Simulation Parameters</h3>
       <table style="width:100%; border-collapse: collapse; margin: 12px 0;">
         <tr style="border-bottom: 1px solid #444;">
@@ -133,6 +133,8 @@
 
   </p>
 </div>
+``
+
 
 
   <!-- Download for benchmark study -->
