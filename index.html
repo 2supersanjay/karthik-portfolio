@@ -1,4 +1,3 @@
-
 <!doctype html><html><head><meta charset='utf-8'><title>Karthik Sanjay Portfolio</title>
 <link rel='stylesheet' href='./assets/style.css'></head><body>
 <h1>Propellant Management Device (PMD) Benchmark Study</h1>
@@ -55,87 +54,22 @@
     </p>
 
  
-
-
-!-- ===== VOF CFD Animation + Table Side-by-Side (50/50) ===== -->
+<!-- ===== VOF CFD Animation (Homepage) ===== -->
 <div id="pmd-animation" style="margin-top:20px;">
   <h3>VOF CFD Animation</h3>
+  <video
+    controls
+    preload="metadata"
+    style="width:100%; max-width:900px; border:1px solid #1f2937; border-radius:8px;"
+    poster="./pmd_vof_thumb.jpg"  <!-- change to the thumbnail you want -->
+  >
+    <source src="./pmd_vof_simulation.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-  <!-- Flex row container: two equal columns -->
-  <div style="
-    display:flex;
-    gap:20px;
-    align-items:flex-start;
-  ">
-    <!-- Left: video column (50%) -->
-    <div style="flex:0 0 50%; max-width:50%;">
-      <video
-        controls
-        preload="metadata"
-        style="width:100%; border:1px solid #1f2937; border-radius:8px;"
-        poster="./pmd_vof_thumb.jpg"
-      >
-        <source src="./pmd_vof_simulation.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-
-      <p style="color:#9ca3af; margin-top:8px;">
-        Volume of Fluid (VOF) multiphase results showing surface-tension behavior and propellant acquisition dynamics.
-      </p>
-
-      <p>
-        <a href="./Vane_Tank_Structure_CFD_Benchmark.pdf" download>
-          Download to the Benchmark Study
-        </a>
-      </p>
-    </div>
-
-    <!-- Right: table column (50%) -->
-    <div style="flex:0 0 50%; max-width:50%;">
-      <h3>CFD Simulation Parameters</h3>
-      <table style="width:100%; border-collapse: collapse; margin: 12px 0;">
-        <tr style="border-bottom: 1px solid #444;">
-          <th style="text-align:left; padding: 8px;">Parameter</th>
-          <th style="text-align:left; padding: 8px;">Value</th>
-        </tr>
-        <tr style="border-bottom: 1px solid #333;">
-          <td style="padding: 8px;">Fill Level</td>
-          <td style="padding: 8px;">50% (mid‑depletion condition)</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #333;">
-          <td style="padding: 8px;">Multiphase Model</td>
-          <td style="padding: 8px;">VOF (Volume of Fluid)</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #333;">
-          <td style="padding: 8px;">Pressure–Velocity Coupling</td>
-          <td style="padding: 8px;">PISO</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #333;">
-          <td style="padding: 8px;">Simulation Duration</td>
-          <td style="padding: 8px;">0.5 s (limited by licensing constraints)</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #333;">
-          <td style="padding: 8px;">Time‑Stepping</td>
-          <td style="padding: 8px;">Adaptive (CFL‑controlled)</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #333;">
-          <td style="padding: 8px;">Mesh Type</td>
-          <td style="padding: 8px;">Polyhedral with prism layers</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px;">Contact Angle</td>
-          <td style="padding: 8px;">0° (complete wetting condition)</td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-
+  <p style="color:#9ca3af; margin-top:8px;">
+    Volume of Fluid (VOF) multiphase results showing surface-tension behavior and propellant acquisition dynamics.
   </p>
-</div>
-``
-
-
 
   <!-- Download for benchmark study -->
   
