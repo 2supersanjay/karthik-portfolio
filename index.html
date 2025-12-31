@@ -29,7 +29,7 @@
          alt="PMD CFD Mesh Preview"
          style="width:100%; border:1px solid #1f2937; border-radius:8px;">
     <figcaption style="color:#9ca3af; margin-top:8px;">
-      Meshing used for VOF CFD simulation (tet/prism hybrid).
+      Meshing used for VOF CFD simulation (Polyhedral).
     </figcaption>
   </figure>
 
@@ -86,6 +86,49 @@
     Download to the Benchmark Study
   </a>
 </p>
+
+<h3>CFD Simulation Parameters</h3>
+<table style="width:100%; border-collapse: collapse; margin: 12px 0;">
+  <tr style="border-bottom: 1px solid #444;">
+    <th style="text-align:left; padding: 8px;">Parameter</th>
+    <th style="text-align:left; padding: 8px;">Value</th>
+  </tr>
+
+  <tr style="border-bottom: 1px solid #333;">
+    <td style="padding: 8px;">Fill Level</td>
+    <td style="padding: 8px;">50% (mid‑depletion condition)</td>
+  </tr>
+
+  <tr style="border-bottom: 1px solid #333;">
+    <td style="padding: 8px;">Multiphase Model</td>
+    <td style="padding: 8px;">VOF (Volume of Fluid)</td>
+  </tr>
+
+  <tr style="border-bottom: 1px solid #333;">
+    <td style="padding: 8px;">Pressure–Velocity Coupling</td>
+    <td style="padding: 8px;">PISO</td>
+  </tr>
+
+  <tr style="border-bottom: 1px solid #333;">
+    <td style="padding: 8px;">Simulation Duration</td>
+    <td style="padding: 8px;">0.5 s (limited by licensing constraints)</td>
+  </tr>
+
+  <tr style="border-bottom: 1px solid #333;">
+    <td style="padding: 8px;">Time‑Stepping</td>
+    <td style="padding: 8px;">Adaptive (CFL‑controlled)</td>
+  </tr>
+
+  <tr style="border-bottom: 1px solid #333;">
+    <td style="padding: 8px;">Mesh Type</td>
+    <td style="padding: 8px;">Polyhedral with prism layers</td>
+  </tr>
+
+  <tr>
+    <td style="padding: 8px;">Contact Angle</td>
+    <td style="padding: 8px;">0° (complete wetting condition)</td>
+  </tr>
+</table>
 
   
 <p>
