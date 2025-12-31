@@ -9,12 +9,33 @@
   <h2>Featured Project: Propellant Management Device (PMD)</h2>
 
   <!-- Image (repo root) -->
-  <figure style="margin: 12px 0;">
-    <img src="./pmd_solidworks.png" alt="PMD CAD Model" style="max-width:100%; border:1px solid #1f2937; border-radius:8px;">
+  
+<!-- === CAD + Mesh Side-by-Side === -->
+<div style="display:flex; gap:20px; align-items:flex-start; margin:20px 0;">
+
+  <!-- CAD image -->
+  <figure style="flex:1; text-align:center;">
+    <img src="./pmd_solidworks.png" 
+         alt="PMD SolidWorks CAD Model"
+         style="width:100%; border:1px solid #1f2937; border-radius:8px;">
     <figcaption style="color:#9ca3af; margin-top:8px;">
-      SolidWorks reconstruction of a spherical cryogenic propellant tank with an integrated PMD used for CFD replication.
+      SolidWorks reconstruction of the spherical tank PMD.
     </figcaption>
   </figure>
+
+  <!-- Mesh image -->
+  <figure style="flex:1; text-align:center;">
+    <img src="./Screenshot 2025-12-31 120646.png" 
+         alt="PMD CFD Mesh Preview"
+         style="width:100%; border:1px solid #1f2937; border-radius:8px;">
+    <figcaption style="color:#9ca3af; margin-top:8px;">
+      Meshing used for VOF CFD simulation (tet/prism hybrid).
+    </figcaption>
+  </figure>
+
+</div>
+<!-- === END SIDE-BY-SIDE === -->
+
 
   <!-- Refined PMD description -->
   <div style="line-height:1.6; margin-top:16px;">
